@@ -1,0 +1,35 @@
+$pryColor: #f5f5f5;
+$secColor: #ffffff;
+$textColor: #838282;
+$heroText: #383838;
+$subtittleText: #323131;
+$ServiceCardtext: #1d1c1c;
+$readMoreText: #b845ff;
+
+.pryColor {
+  background-color: $pryColor;
+}
+
+.secColor {
+  color: $secColor;
+}
+
+.textColor {
+  color: $textColor;
+}
+
+.heroText {
+  color: $heroText;
+}
+
+.subtittleText {
+  color: $subtittleText;
+}
+
+.ServiceCardtext {
+  color: $ServiceCardtext;
+}
+
+.readMoreText {
+  color: $readMoreText;
+}
