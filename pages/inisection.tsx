@@ -58,9 +58,11 @@ export const OurProcess = () => {
 
       {/* mobile */}
       <div
-        className={`mx-auto mt-12 text-white py-8 block sm:hidden ${ourprocessstyles.MobileBg}`}
+        className={`mx-auto mt-12 text-white py-20 block sm:hidden ${ourprocessstyles.MobileBg}`}
       >
-        <h2 className="text-center text-2xl sm:mt-16 lg:mt-28">Our Process</h2>
+        <h2 className="text-center text-2xl mt-8 sm:mt-16 lg:mt-28">
+          Our Process
+        </h2>
         <OurProcessCardMapping />
       </div>
     </>
