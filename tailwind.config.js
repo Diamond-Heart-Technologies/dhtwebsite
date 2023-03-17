@@ -28,11 +28,8 @@ module.exports = {
       ash: "#f5f5f5",
       white: "#ffffff",
       lightash: "#838282",
-      darkerash: "#383838",
       midnightash: "#323131",
-      darkestash: "#1d1c1c",
       purple: "#b845ff",
-
       extend: {},
     },
     extend: {},
