@@ -29,9 +29,9 @@ export default function IniSection() {
 export const AboutUs = () => {
   return (
     <>
-      <div className="container mx-auto px-8 md:px-12 text-black">
+      <div className="container mx-auto px-8 md:px-12 text-black mt-24">
         <h2 className="text-center text-2xl">About Us</h2>
-        <p className="text-left pt-2">
+        <p className="text-left pt-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
           voluptates molestiae id distinctio explicabo vitae hic at, commodi
           provident repudiandae eaque ex nulla mollitia cumque. Lorem ipsum
