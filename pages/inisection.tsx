@@ -31,7 +31,7 @@ export const AboutUs = () => {
     <>
       <div className="container mx-auto px-8 md:px-12 text-black mt-24">
         <h2 className="text-center text-2xl">About Us</h2>
-        <p className="text-left pt-4">
+        <p className="text-left pt-4 mx-auto">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
           voluptates molestiae id distinctio explicabo vitae hic at, commodi
           provident repudiandae eaque ex nulla mollitia cumque. Lorem ipsum

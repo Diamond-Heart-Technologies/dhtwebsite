@@ -28,7 +28,7 @@ export const OurProcessCard = (props: Product) => {
 export const OurProcessCardMapping = () => {
   return (
     // <div className="container">
-    <div className="mx-auto grid gap-6 px-8 sm:grid-cols-3 lg:grid-cols-4 md:px-12 sm:mt-8 lg:mt-10">
+    <div className="mx-auto grid gap-6 px-6 sm:grid-cols-3 lg:grid-cols-4 sm:mt-8 lg:mt-10">
       {Card.OurProcessCard.map((item) => {
         return (
           <>
