@@ -30,6 +30,8 @@ module.exports = {
       lightash: "#838282",
       midnightash: "#323131",
       purple: "#b845ff",
+      purple2: "#7402BA",
+      contactustext: "#000000",
       extend: {},
     },
     extend: {},

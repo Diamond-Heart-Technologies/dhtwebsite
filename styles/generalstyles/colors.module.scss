@@ -3,6 +3,7 @@ $secColor: #ffffff;
 $textColor: #838282;
 $navbarHeadingtextColor: #323131;
 $readMoreText: #b845ff;
+$contactusTextColor: #000000;
 
 .pryColor {
   background-color: $pryColor;
@@ -22,4 +23,8 @@ $readMoreText: #b845ff;
 
 .navbarHeadingtextColor {
   color: $navbarHeadingtextColor;
+}
+
+.contactusTextColor {
+  color: $contactusTextColor;
 }
