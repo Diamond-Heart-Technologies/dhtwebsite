@@ -71,16 +71,16 @@ const Contact = () => {
               </div>
             </div>
             <div className=" flex flex-col items-center justify-center">
-              {/* <SubmitButton /> */}
+              <SubmitButton />
               {/* <a href="mailto:muoghaluijeoma@gmail.com" target="_blank"></a> */}
-              <button
+              {/* <button
                 type="submit"
                 className="
                     
                        mt-4 w-40 bg-purple2 py-2 rounded-md text-lg tracking-wide text-white  
                         ">
                 Submit
-              </button>
+              </button> */}
             </div>
           </div>
         </form>
