@@ -7,10 +7,6 @@ import { TestimonialsCardMapping } from "@/Components/AllCards/testimonialCards"
 export default function IniSection() {
   return (
     <>
-      {/* <div>
-        <h1 className="text-3xl font-bold underline">Hello</h1>
-      </div> */}
-
       <div>
         <AboutUs />
       </div>

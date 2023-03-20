@@ -37,18 +37,18 @@ export const TestimonialsCard = (props: Product) => {
 
 export const TestimonialsCardMapping = () => {
   return (
-    // <div className="container">
-    <div className="mx-auto grid gap-6 px-8 sm:grid-cols-2 lg:grid-cols-3 mt-20 sm:mt-24">
-      {Card.TestimonialsCard.map((item) => {
-        return (
-          <>
-            <div className="" key={item.Id}>
-              <TestimonialsCard {...item} />
-            </div>
-          </>
-        );
-      })}
-    </div>
-    // </div>
+    <>
+      <div className="mx-auto grid gap-6 px-8 sm:grid-cols-2 lg:grid-cols-3 mt-20 sm:mt-24">
+        {Card.TestimonialsCard.map((item) => {
+          return (
+            <>
+              <div className="" key={item.Id}>
+                <TestimonialsCard {...item} />
+              </div>
+            </>
+          );
+        })}
+      </div>
+    </>
   );
 };
