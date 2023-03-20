@@ -1,6 +1,5 @@
 import Head from "next/head";
 import Image from "next/image";
-import Contact from "@/Components/contactUs";
 
 export default function Home() {
   return (
@@ -12,7 +11,6 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        {/* <Contact /> */}
         {/* <h1 className="text-3xl font-bold underline">Hello world!</h1> */}
       </main>
     </>
