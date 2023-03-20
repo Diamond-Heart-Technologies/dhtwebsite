@@ -25,4 +25,17 @@
 .btnColor {
   background-color: btnColor;
 }
-/*# sourceMappingURL=colors.module.css.map */
+
+.Submit {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 45px;
+  padding-right: 45px;
+  border-radius: 10px;
+  background-color: #7402ba;
+  line-height: 12px;
+  letter-spacing: 0%;
+  color: white;
+  border: none;
+}
+/*# sourceMappingURL=buttons.module.css.map */

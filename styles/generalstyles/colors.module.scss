@@ -4,6 +4,7 @@ $textColor: #838282;
 $navbarHeadingtextColor: #323131;
 $readMoreText: #b845ff;
 $contactusTextColor: #000000;
+$btnColor: #7402ba;
 
 .pryColor {
   background-color: $pryColor;
@@ -27,4 +28,8 @@ $contactusTextColor: #000000;
 
 .contactusTextColor {
   color: $contactusTextColor;
+}
+
+.btnColor {
+  background-color: btnColor;
 }

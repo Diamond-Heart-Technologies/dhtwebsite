@@ -1,5 +1,7 @@
 import { useState } from "react";
 import styles from "../styles/componentstyles/contactUs.module.scss";
+import Link from "next/link";
+import { SubmitButton } from "../Components/buttons";
 
 const Contact = () => {
   return (
@@ -69,6 +71,8 @@ const Contact = () => {
               </div>
             </div>
             <div className=" flex flex-col items-center justify-center">
+              {/* <SubmitButton /> */}
+              {/* <a href="mailto:muoghaluijeoma@gmail.com" target="_blank"></a> */}
               <button
                 type="submit"
                 className="
@@ -154,14 +158,16 @@ export const ContactM = () => {
               </div>
             </div>
             <div className=" flex flex-col items-center justify-center">
-              <button
+              {/* <a href="mailto:muoghaluijeoma@gmail.com" target="_blank"> */}
+              {/* <button
                 type="submit"
                 className="
                     
                        mt-4 w-40 bg-purple2 py-2 rounded-md text-lg tracking-wide text-white  
                         ">
                 Submit
-              </button>
+              </button> */}
+              {/* </a> */}
             </div>
           </div>
         </form>
