@@ -46,17 +46,17 @@ export const OurProcess = () => {
     <>
       {/* desktop */}
       <div
-        className={`mx-auto mt-24 text-white py-8 hidden sm:block  ${ourprocessstyles.DesktopBg}`}
+        className={`mx-auto mt-24 text-white py-8 hidden sm:block ${ourprocessstyles.DesktopBg}`}
       >
-        <h2 className="text-center text-2xl sm:mt-16 lg:mt-28">Our Process</h2>
+        <h2 className="text-center text-2xl sm:mt-24 lg:mt-80">Our Process</h2>
         <OurProcessCardMapping />
       </div>
 
       {/* mobile */}
       <div
-        className={`mx-auto mt-24 text-white py-20 block sm:hidden ${ourprocessstyles.MobileBg}`}
+        className={`mx-auto mt-24 text-white py-20 mob:block sm:hidden ${ourprocessstyles.MobileBg}`}
       >
-        <h2 className="text-center text-2xl mt-8 sm:mt-16 lg:mt-28">
+        <h2 className="text-center text-2xl mt-60 sm:mt-16 lg:mt-28">
           Our Process
         </h2>
         <OurProcessCardMapping />
