@@ -5,7 +5,6 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
-
   theme: {
     screens: {
       sm: "640px",
@@ -22,6 +21,7 @@ module.exports = {
 
       "2xl": "1536px",
       // => @media (min-width: 1536px) { ... }
+      mob: { max: "639px" },
     },
     colors: {
       transparent: "transparent",
@@ -29,11 +29,10 @@ module.exports = {
       ash: "#f5f5f5",
       white: "#ffffff",
       lightash: "#838282",
-      darkerash: "#383838",
       midnightash: "#323131",
-      darkestash: "#1d1c1c",
       purple: "#b845ff",
-
+      borderLight: "#A1A1A1",
+      dark: "#000000",
       extend: {},
     },
     extend: {},

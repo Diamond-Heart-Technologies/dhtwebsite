@@ -1,10 +1,10 @@
 $pryColor: #f5f5f5;
 $secColor: #ffffff;
 $textColor: #838282;
-$heroText: #383838;
-$subtittleText: #323131;
-$ServiceCardtext: #1d1c1c;
+$navbarHeadingtextColor: #323131;
 $readMoreText: #b845ff;
+$contactusTextColor: #000000;
+$btnColor: #7402ba;
 
 .pryColor {
   background-color: $pryColor;
@@ -18,18 +18,30 @@ $readMoreText: #b845ff;
   color: $textColor;
 }
 
-.heroText {
-  color: $heroText;
+.readMoreText {
+  color: $readMoreText;
 }
 
-.subtittleText {
-  color: $subtittleText;
+.navbarHeadingtextColor {
+  color: $navbarHeadingtextColor;
 }
 
-.ServiceCardtext {
-  color: $ServiceCardtext;
+.contactusTextColor {
+  color: $contactusTextColor;
+}
+
+.btnColor {
+  background-color: btnColor;
+}
+
+.textColor {
+  color: $textColor;
 }
 
 .readMoreText {
   color: $readMoreText;
+}
+
+.navbarHeadingtextColor {
+  color: $navbarHeadingtextColor;
 }

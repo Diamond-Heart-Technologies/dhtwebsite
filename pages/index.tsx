@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Image from "next/image";
-import PeterPage from "../pages/peterPage";
+import React from "react";
+import { OurservicesCardMapping } from "../Components/AllCards/ourServicescards";
+import Hero from "../Components/hero";
 
 export default function Home() {
   return (
@@ -12,8 +14,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <PeterPage />
+        <Hero />
+        <section className="mt-[140px] bg-white" id="ourservices">
+          <OurservicesCardMapping />
+        </section>
       </main>
     </>
   );
 }
+4;

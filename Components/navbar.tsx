@@ -1,78 +1,207 @@
 import Link from "next/link";
 import { useState } from "react";
+import React from "react";
+import Head from "next/head";
+import Navstyle from "../styles/componentstyles/navbar.module.scss";
+import navimage from "../public/images/navimage.png";
+import Image from "next/image";
 
-export const Navbar = () => {
-  const [active, setActive] = useState(false);
+// export function Navbar() {
+//   return (
+//     <>
+//       <section className="lg:sticky top-0 z-30 w-full   mx-auto flex max-w-4xl items-center justify-between p-4">
+//         <h1 className="text-3xl font-medium">
+//           <a href="#hero">🚀 Acme Rockets</a>
+//         </h1>
+//         <div>
+//           <button
+//             id="hamburger-button"
+//             className="relative h-8 w-8 cursor-pointer text-3xl md:hidden"
+//           >
+//             &#9776;
+//             <div className="absolute top-4 -mt-0.5 h-1 w-8 rounded  transition-all duration-500 before:absolute before:h-1 before:w-8 before:-translate-x-4 before:-translate-y-3 before:rounded before:bg-midnightash before:transition-all before:duration-500 before:content-[''] after:absolute after:h-1 after:w-8 after:-translate-x-4 after:translate-y-3 after:rounded after:bg-midnightash after:transition-all after:duration-500 after:content-['']"></div>
+//           </button>
+//           <nav className="hidden space-x-8 text-xl md:block" aria-label="main">
+//             <a href="#rockets" className="hover:opacity-90">
+//               Our Rockets
+//             </a>
+//             <a href="#testimonials" className="hover:opacity-90">
+//               Testimonials
+//             </a>
+//             <a href="#contact" className="hover:opacity-90">
+//               Contact Us
+//             </a>
+//           </nav>
+//         </div>
+//       </section>
+//       <section
+//         id="mobile-menu"
+//         className="top-68 justify-content-center animate-open-menu absolute hidden w-full origin-top flex-col bg-black text-5xl"
+//       >
+//         <button className="text-8xl self-end px-6">&times;</button>
+//         <nav
+//           className="flex min-h-screen flex-col items-center py-8"
+//           aria-label="mobile"
+//         >
+//           <a href="#hero" className="w-full py-6 text-center hover:opacity-90">
+//             Home
+//           </a>
+//           <a
+//             href="#rockets"
+//             className="w-full py-6 text-center hover:opacity-90"
+//           >
+//             Our Rockets
+//           </a>
+//           <a
+//             href="#testimonials"
+//             className="w-full py-6 text-center hover:opacity-90"
+//           >
+//             Testimonials
+//           </a>
+//           <a
+//             href="#contact"
+//             className="w-full py-6 text-center hover:opacity-90"
+//           >
+//             Contact Us
+//           </a>
+//           <a
+//             href="#footer"
+//             className="w-full py-6 text-center hover:opacity-90"
+//           >
+//             Legal Info
+//           </a>
+//         </nav>
+//       </section>
+//     </>
+//   );
+// }
 
-  const handleClick = () => {
-    setActive(!active);
-  };
+export function Navbar() {
+  const [navbar, setNavbar] = useState(false);
 
   return (
-    <>
-      <nav className="flex items-center flex-wrap bg-green-400 p-3 ">
-        <Link href="/">
-          <a className="inline-flex items-center p-2 mr-4 ">
-            <svg
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              className="fill-current text-white h-8 w-8 mr-2">
-              <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z" />
-            </svg>
-            <span className="text-xl text-white font-bold uppercase tracking-wide">
-              Talwind CSS
-            </span>
-          </a>
-        </Link>
-        <button
-          className=" inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none"
-          onClick={handleClick}>
-          <svg
-            className="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </button>
-        {/*Note that in this div we will use a ternary operator to decide whether or not to display the content of the div  */}
-        <div
-          className={`${
-            active ? "" : "hidden"
-          }   w-full lg:inline-flex lg:flex-grow lg:w-auto`}>
-          <div className="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto">
-            <a
-              href="/"
-              className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white ">
-              Home
-            </a>
-
-            <a
-              href="/"
-              className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white">
-              Services
-            </a>
-
-            <a
-              href="/"
-              className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white">
-              About us
-            </a>
-
-            <a
-              href="/"
-              className="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-white font-bold items-center justify-center hover:bg-green-600 hover:text-white">
-              Contact us
-            </a>
+    <div className="sticky top-0 z-10">
+      <nav className={` w-full bg-gray-800   mob:bg-white`}>
+        <div className="justify-between px-4 mx-auto lg:max-w-7xl sm:items-center sm:flex sm:px-8">
+          <div>
+            <div className="flex items-center justify-between py-3 sm:py-5 sm:block">
+              <Link href="#">
+                {/* <h2 className="text-2xl text-midnightash font-bold">NEXT JS</h2> */}
+                <Image src={navimage} alt="navimage" className="w-[50px]" />
+              </Link>
+              <div className="sm:hidden">
+                <button
+                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
+                  onClick={() => setNavbar(!navbar)}
+                >
+                  {navbar ? (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 text-midnightash"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  ) : (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="w-6 h-6 text-midnightash"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M4 6h16M4 12h16M4 18h16"
+                      />
+                    </svg>
+                  )}
+                </button>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              className={`flex-1 justify-self-center pb-3 mt-8 sm:block sm:pb-0 sm:mt-0  ${
+                navbar ? "block" : "hidden"
+              }`}
+            >
+              <ul className="items-center justify-center space-y-8 sm:flex sm:space-x-6 sm:space-y-0 lg:pr-[175px] md:gap-3 ">
+                <li className="text-dark text-[19px]">
+                  <Link href="#ourservices">Services</Link>
+                </li>
+                <li className="text-dark text-[19px]">
+                  <Link href="/blogs">About</Link>
+                </li>
+                <li className="text-dark text-[19px]">
+                  <Link href="/about">Our Process</Link>
+                </li>
+                <li className="text-dark text-[19px]">
+                  <Link href="/contact">Projects</Link>
+                </li>
+                <li className="text-dark text-[19px]">
+                  <Link href="/contact">Testimonials</Link>
+                </li>
+                <li className="text-dark text-[19px] lg:text-white">
+                  <Link href="/contact">Contacts</Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
+    </div>
+  );
+}
+export const mobileNav = () => {
+  return (
+    <>
+      <section
+        id="mobile-menu"
+        className="top-68 justify-content-center animate-open-menu absolute hidden w-full origin-top flex-col bg-black text-5xl"
+      >
+        <button className="text-8xl self-end px-6">&times;</button>
+        <nav
+          className="flex min-h-screen flex-col items-center py-8"
+          aria-label="mobile"
+        >
+          <a href="#hero" className="w-full py-6 text-center hover:opacity-90">
+            Home
+          </a>
+          <a
+            href="#rockets"
+            className="w-full py-6 text-center hover:opacity-90"
+          >
+            Our Rockets
+          </a>
+          <a
+            href="#testimonials"
+            className="w-full py-6 text-center hover:opacity-90"
+          >
+            Testimonials
+          </a>
+          <a
+            href="#contact"
+            className="w-full py-6 text-center hover:opacity-90"
+          >
+            Contact Us
+          </a>
+          <a
+            href="#footer"
+            className="w-full py-6 text-center hover:opacity-90"
+          >
+            Legal Info
+          </a>
+        </nav>
+      </section>
+      ;
     </>
   );
 };
