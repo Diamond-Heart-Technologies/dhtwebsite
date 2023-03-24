@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import PeterPage from "../pages/peterPage";
 
 export default function Home() {
   return (
