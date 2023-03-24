@@ -20,19 +20,22 @@ function Hero() {
       >
         <Navbar />
       </div>
-      <div className="sm:hidden">
-        <Navbar />
-      </div>
+
       <div
-        className="sm:hidden mt-20"
+        className="sm:hidden "
         style={{
           backgroundImage: `url(${HeroImage2.src})`,
           height: "40vw",
           backgroundRepeat: "no-repeat",
           backgroundSize: "100vw 40vw",
           backgroundPosition: "center",
+          paddingBottom: "600px",
         }}
-      ></div>
+      >
+        <div className="">
+          <Navbar />
+        </div>
+      </div>
     </>
   );
 }

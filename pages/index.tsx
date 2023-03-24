@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
-        <section className="mt-[140px] bg-white" id="ourservices">
+        <section className="mt-[px] bg-white" id="ourservices">
           <OurservicesCardMapping />
         </section>
       </main>

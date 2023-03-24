@@ -1,137 +1,201 @@
+import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import React from "react";
 import Head from "next/head";
 import Navstyle from "../styles/componentstyles/navbar.module.scss";
 import navimage from "../public/images/navimage.png";
 import Image from "next/image";
 
-export function Navbar() {
-  const [navbar, setNavbar] = useState(false);
+export const Navbar = () => {
+  const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
+
+  const handleNav = () => {
+    setNav(!nav);
+  };
+
+  useEffect(() => {
+    const handleShadow = () => {
+      if (window.scrollY >= 90) {
+        setShadow(true);
+      } else {
+        setShadow(false);
+      }
+    };
+    window.addEventListener("scroll", handleShadow);
+  }, []);
 
   return (
-    <div className="sticky top-0 z-10">
-      <nav className={` w-full bg-gray-800   mob:bg-white`}>
-        <div className="justify-between px-4 mx-auto lg:max-w-7xl sm:items-center sm:flex sm:px-8">
+    <div
+      // style={{ backgroundColor: `${navBg}` }}
+      className={
+        shadow
+          ? "fixed  w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-white"
+          : "fixed w-full h-20 z-[100]"
+      }
+    >
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+        <Link href="/">
+          <Image
+            src={navimage}
+            alt="/"
+            width="60"
+            height="50"
+            className="cursor-pointer"
+          />
+        </Link>
+        <div>
+          <ul style={{ color: `${linkColor}` }} className="hidden sm:flex">
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link href="/">Home</Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link href="/#about">About</Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link href="/#skills">Skills</Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link href="/#projects">Projects</Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link href="/resume">Resume</Link>
+            </li>
+            <li className="ml-10 text-sm uppercase hover:border-b">
+              <Link href="/#contact">Contact</Link>
+            </li>
+          </ul>
+          {/* Hamburger Icon */}
+          <div
+            style={{ color: `${linkColor}` }}
+            onClick={handleNav}
+            className="sm:hidden"
+          >
+            <AiOutlineMenu
+              className="hover:text-purple transition delay-100"
+              size={32}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Mobile Menu */}
+      {/* Overlay */}
+      <div
+        className={
+          nav
+            ? "md:hidden fixed left-0 top-0 w-full  h-screen bg-[#9aa1a1da]"
+            : ""
+        }
+      >
+        {/* Side Drawer Menu */}
+        <div
+          className={
+            nav
+              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
+          }
+        >
           <div>
-            <div className="flex items-center justify-between py-3 sm:py-5 sm:block">
-              <Link href="#">
-                {/* <h2 className="text-2xl text-midnightash font-bold">NEXT JS</h2> */}
-                <Image src={navimage} alt="navimage" className="w-[50px]" />
+            <div className="flex w-full items-center justify-between">
+              <Link href="/">
+                <Image src={navimage} width="50" height="35" alt="/" />
               </Link>
-              <div className="sm:hidden">
-                <button
-                  className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"
-                  onClick={() => setNavbar(!navbar)}
+              <div
+                onClick={handleNav}
+                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+              >
+                <AiOutlineClose />
+              </div>
+            </div>
+            {/* <div className="border-b border-gray-300 my-4">
+              <p className="w-[85%] md:w-[90%] py-4">
+                Let&#39;s build something legendary together
+              </p>
+            </div> */}
+          </div>
+          <div className="py-4 flex flex-col">
+            <ul className="uppercase">
+              <Link href="/">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Home
+                </li>
+              </Link>
+              <Link href="/#about">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  About
+                </li>
+              </Link>
+              <Link href="/#skills">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Skills
+                </li>
+              </Link>
+              <Link href="/#projects">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Projects
+                </li>
+              </Link>
+              <Link href="/resume">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Resume
+                </li>
+              </Link>
+              <Link href="/#contact">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Contact
+                </li>
+              </Link>
+            </ul>
+            <div className="pt-40">
+              <p className="uppercase tracking-widest text-[#5651e5]">
+                Let&#39;s Connect
+              </p>
+              <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
+                <a
+                  href="https://www.linkedin.com/in/clint-briley-50056920a/"
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  {navbar ? (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 text-midnightash"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  ) : (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="w-6 h-6 text-midnightash"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      strokeWidth={2}
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M4 6h16M4 12h16M4 18h16"
-                      />
-                    </svg>
-                  )}
-                </button>
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <FaLinkedinIn />
+                  </div>
+                </a>
+                <a
+                  href="https://github.com/fireclint"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                    <FaGithub />
+                  </div>
+                </a>
+                <Link href="/#contact">
+                  <div
+                    onClick={() => setNav(!nav)}
+                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                  >
+                    <AiOutlineMail />
+                  </div>
+                </Link>
+                <Link href="/resume">
+                  <div
+                    onClick={() => setNav(!nav)}
+                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                  >
+                    <BsFillPersonLinesFill />
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
-          <div>
-            <div
-              className={`flex-1 justify-self-center pb-3 mt-8 sm:block sm:pb-0 sm:mt-0  ${
-                navbar ? "block" : "hidden"
-              }`}
-            >
-              <ul className="items-center justify-center space-y-8 sm:flex sm:space-x-6 sm:space-y-0 lg:pr-[175px] md:gap-3 ">
-                <li className="text-dark text-[19px]">
-                  <Link href="#ourservices">Services</Link>
-                </li>
-                <li className="text-dark text-[19px]">
-                  <Link href="/blogs">About</Link>
-                </li>
-                <li className="text-dark text-[19px]">
-                  <Link href="/about">Our Process</Link>
-                </li>
-                <li className="text-dark text-[19px]">
-                  <Link href="/contact">Projects</Link>
-                </li>
-                <li className="text-dark text-[19px]">
-                  <Link href="/contact">Testimonials</Link>
-                </li>
-                <li className="text-dark text-[19px] lg:text-white">
-                  <Link href="/contact">Contacts</Link>
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </nav>
+      </div>
     </div>
-  );
-}
-export const mobileNav = () => {
-  return (
-    <>
-      <section
-        id="mobile-menu"
-        className="top-68 justify-content-center animate-open-menu absolute hidden w-full origin-top flex-col bg-black text-5xl"
-      >
-        <button className="text-8xl self-end px-6">&times;</button>
-        <nav
-          className="flex min-h-screen flex-col items-center py-8"
-          aria-label="mobile"
-        >
-          <a href="#hero" className="w-full py-6 text-center hover:opacity-90">
-            Home
-          </a>
-          <a
-            href="#rockets"
-            className="w-full py-6 text-center hover:opacity-90"
-          >
-            Our Rockets
-          </a>
-          <a
-            href="#testimonials"
-            className="w-full py-6 text-center hover:opacity-90"
-          >
-            Testimonials
-          </a>
-          <a
-            href="#contact"
-            className="w-full py-6 text-center hover:opacity-90"
-          >
-            Contact Us
-          </a>
-          <a
-            href="#footer"
-            className="w-full py-6 text-center hover:opacity-90"
-          >
-            Legal Info
-          </a>
-        </nav>
-      </section>
-      ;
-    </>
   );
 };
