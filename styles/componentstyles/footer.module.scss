@@ -1,0 +1,55 @@
+.footerBg {
+  background-image: url(../../public/images/footerRectangle.png);
+  background-size: cover;
+  height: 120vh;
+  width: 100%;
+  max-width: 1920px;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+// @media (max-width: 767px) {
+//   .footerBg {
+//     display: none;
+//   }
+// }
+
+.footerMobile {
+  background-image: url(../../public/images/FOOTERMOBILE.png);
+  background-size: cover;
+  height: 1250px;
+  // height: 160vh;
+  width: 100%;
+  max-width: 1280px;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+// @media (min-width: 768px) and (max-width: 1800px) {
+//   .footerMobile {
+//     display: none;
+//   }
+// }
+
+// @media (max-width: 680px) {
+//   .logoImg {
+//     margin-top: 100px;
+//   }
+// }
+
+// @media (min-width: 768px) and (max-width: 1300px) {
+//   .footerWords {
+//     margin-top: 400px;
+//   }
+// }
+// @media (min-width: 768px) and (max-width: 1300px) {
+//   .footerWord {
+//     margin-top: 320px;
+//   }
+// }

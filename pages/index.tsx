@@ -2,6 +2,9 @@ import Head from "next/head";
 import Image from "next/image";
 import Contact from "@/Components/contactUs";
 import { ContactM } from "@/Components/contactUs";
+import FooterRectangle from "../Components/footer";
+import { FooterMobile } from "../Components/footer";
+import { FooterRectangleLg } from "../Components/footer";
 
 export default function Home() {
   return (
@@ -13,10 +16,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div>
+        <section id="ContactUs">
           <Contact />
           <ContactM />
-        </div>
+        </section>
+        <section className="mt-60">
+          <FooterRectangle />
+          <FooterMobile />
+          <FooterRectangleLg />
+        </section>
+
         {/* <h1 className="text-3xl font-bold underline">Hello world!</h1> */}
       </main>
     </>

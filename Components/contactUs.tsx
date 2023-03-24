@@ -5,7 +5,7 @@ import { SubmitButton } from "../Components/buttons";
 
 const Contact = () => {
   return (
-    <section className={`${styles.contactUsDesktopbg}`}>
+    <section className={` block mod:hidden ${styles.contactUsDesktopbg}`}>
       <div className="h-screen bg-gradient-to-br flex justify-center items-center w-full">
         <form className="mt-80">
           <div className="mb-12 lg:mb-0">
@@ -92,8 +92,8 @@ const Contact = () => {
 // Mobile Section
 export const ContactM = () => {
   return (
-    <section className={`${styles.contactUsMobilebg}`}>
-      <div className=" bg-gradient-to-br flex justify-center items-center w-full">
+    <section className={`hidden mod:block ${styles.contactUsMobilebg}`}>
+      <div className=" bg-gradient-to-br flex justify-center items-center">
         <form className="mt-96">
           <div className="mb-12 lg:mb-0">
             <h2 className="block mb-4 text-white font-light text-3xl text-center">

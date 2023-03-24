@@ -1,4 +1,4 @@
-$pryColor: #f5f5f5;
+$pryColor: white;
 $secColor: #ffffff;
 $textColor: #838282;
 $navbarHeadingtextColor: #323131;
@@ -31,5 +31,17 @@ $btnColor: #7402ba;
 }
 
 .btnColor {
-  background-color: btnColor;
+  background-color: $btnColor;
+}
+
+.textColor {
+  color: $textColor;
+}
+
+.readMoreText {
+  color: $readMoreText;
+}
+
+.navbarHeadingtextColor {
+  color: $navbarHeadingtextColor;
 }

@@ -1,5 +1,5 @@
 .pryColor {
-  background-color: #f5f5f5;
+  background-color: white;
 }
 
 .secColor {
@@ -23,6 +23,18 @@
 }
 
 .btnColor {
-  background-color: btnColor;
+  background-color: #7402ba;
+}
+
+.textColor {
+  color: #838282;
+}
+
+.readMoreText {
+  color: #b845ff;
+}
+
+.navbarHeadingtextColor {
+  color: #323131;
 }
 /*# sourceMappingURL=colors.module.css.map */
