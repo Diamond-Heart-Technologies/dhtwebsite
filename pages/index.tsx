@@ -4,7 +4,7 @@ import Contact from "@/Components/contactUs";
 import { ContactM } from "@/Components/contactUs";
 import FooterRectangle from "../Components/footer";
 import { FooterMobile } from "../Components/footer";
-import { FooterRectangleLg } from "../Components/footer";
+// import { FooterRectangleLg } from "../Components/footer";
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
         <section className="mt-60">
           <FooterRectangle />
           <FooterMobile />
-          <FooterRectangleLg />
+          {/* <FooterRectangleLg /> */}
         </section>
 
         {/* <h1 className="text-3xl font-bold underline">Hello world!</h1> */}

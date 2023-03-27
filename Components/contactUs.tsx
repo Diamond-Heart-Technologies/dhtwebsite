@@ -7,8 +7,8 @@ const Contact = () => {
   return (
     <section className={` block mod:hidden ${styles.contactUsDesktopbg}`}>
       <div className="h-screen bg-gradient-to-br flex justify-center items-center w-full">
-        <form className="mt-80">
-          <div className="mb-12 lg:mb-0">
+        <form className="mt-96">
+          <div className="mb-12 lg:mb-0 mt-44">
             <h2 className="block mb-4 text-white font-light text-3xl text-center">
               Contact Us
             </h2>
@@ -93,16 +93,17 @@ const Contact = () => {
 export const ContactM = () => {
   return (
     <section className={`hidden mod:block ${styles.contactUsMobilebg}`}>
-      <div className=" bg-gradient-to-br flex justify-center items-center">
-        <form className="mt-96">
-          <div className="mb-12 lg:mb-0">
+      <div className=" h-screen bg-gradient-to-br flex justify-center items-center mx-auto">
+        <form className={`mt-96`}>
+          <div className={`mb-12 lg:mb-0 mt-72`}>
             <h2 className="block mb-4 text-white font-light text-3xl text-center">
               Contact Us
             </h2>
             <br />
             <br />
           </div>
-          <div className="bg-white px-10 py-8 rounded-xl w-screen shadow-md max-w-sm">
+          <div
+            className={`bg-white px-10 py-8 rounded-xl shadow-md max-w-sm w-[270px] h-[500px]`}>
             <div className="space-y-4 font-light">
               <div>
                 <label htmlFor="email" className="">
@@ -158,6 +159,9 @@ export const ContactM = () => {
               </div>
             </div>
             <div className=" flex flex-col items-center justify-center">
+              <div className=" flex flex-col items-center justify-center">
+                <SubmitButton />
+              </div>
               {/* <a href="mailto:muoghaluijeoma@gmail.com" target="_blank"> */}
               {/* <button
                 type="submit"

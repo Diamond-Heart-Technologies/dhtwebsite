@@ -3,13 +3,17 @@
 .contactUsDesktopbg {
   background-image: url(../../public/images/contactUsDesktopbg.png);
   background-size: cover;
-  height: 100vh;
+  height: 855px;
   width: 100%;
   position: relative;
   top: 0px;
   right: 0px;
   bottom: 0px;
   left: 0px;
+}
+
+.contactusCard {
+  width: 181px;
 }
 // @media (max-width: 767px) {
 //   .contactUsDesktopbg {
@@ -20,7 +24,7 @@
 .contactUsMobilebg {
   background-image: url(../../public/images/contactUsMobilebg.png);
   background-size: cover;
-  height: 100vh;
+  height: 900px;
   width: 100%;
   position: relative;
   top: 0px;

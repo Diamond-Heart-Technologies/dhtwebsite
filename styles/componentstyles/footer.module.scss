@@ -1,9 +1,9 @@
 .footerBg {
   background-image: url(../../public/images/footerRectangle.png);
   background-size: cover;
-  height: 120vh;
+  height: 100%;
   width: 100%;
-  max-width: 1920px;
+  max-width: 100%;
   position: relative;
   top: 0px;
   right: 0px;
@@ -20,10 +20,10 @@
 .footerMobile {
   background-image: url(../../public/images/FOOTERMOBILE.png);
   background-size: cover;
-  height: 1250px;
-  // height: 160vh;
+  // height: 1150px;
+  height: 200vh;
   width: 100%;
-  max-width: 1280px;
+  max-width: 100%;
   position: relative;
   top: 0px;
   right: 0px;
@@ -31,17 +31,28 @@
   left: 0px;
 }
 
+// .footerStyle {
+//   justify-content: center !important;
+// }
+
 // @media (min-width: 768px) and (max-width: 1800px) {
 //   .footerMobile {
 //     display: none;
 //   }
 // }
 
-// @media (max-width: 680px) {
-//   .logoImg {
-//     margin-top: 100px;
-//   }
-// }
+.logoText {
+  font-size: 50px;
+}
+.logoTextMobile {
+  font-size: 40px;
+}
+.logoPtext {
+  font-size: 8px;
+}
+.logoPtextMobile {
+  font-size: 10px;
+}
 
 // @media (min-width: 768px) and (max-width: 1300px) {
 //   .footerWords {
