@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 {"version":3,"sources":["fonts.module.scss"],"names":[],"mappings":"AAAQ,4LAAA,CACA,4GAAA","file":"fonts.module.min.css"}
+=======
+{"version":3,"sources":["fonts.module.scss"],"names":[],"mappings":"AAAQ,sEAAA,CAOR,gBACE,2CAAA","file":"fonts.module.min.css"}
+>>>>>>> b471b0cbd2e9769fd02a5d31532bca9712ebb4a5
