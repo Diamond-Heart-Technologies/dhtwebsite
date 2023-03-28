@@ -15,11 +15,10 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
-        <section className="mt-[px] bg-white" id="ourservices">
+        <section className=" bg-white" id="ourservices">
           <OurservicesCardMapping />
         </section>
       </main>
     </>
   );
 }
-4;
