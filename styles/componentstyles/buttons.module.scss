@@ -1,0 +1,14 @@
+@use "../generalstyles/colors.module.scss" as *;
+
+.Submit {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 45px;
+  padding-right: 45px;
+  border-radius: 10px;
+  background-color: $btnColor;
+  line-height: 12px;
+  letter-spacing: 0%;
+  color: white;
+  border: none;
+}

@@ -29,7 +29,14 @@ module.exports = {
       lightash: "#838282",
       midnightash: "#323131",
       purple: "#b845ff",
-      extend: {},
+      purple2: "#7402BA",
+      contactustext: "#000000",
+      extend: {
+        // fontFamily: {
+        //   poppins: ["Poppins", "sans-serif"],
+        //   VastShadow: ["Vast Shadow", cursive],
+        // },
+      },
     },
     extend: {},
   },

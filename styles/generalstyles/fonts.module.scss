@@ -1,10 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-// @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@use "../generalstyles/colors.module.scss";
+@import url("https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap");
 
-$logoFontFamily: "Poppins", sans-serif;
-// $headingFontFamily: "Inter", sans-serif;
-// $bodyFontFamily: "Poppins", sans-serif;
+$companyName: "Vast Shadow", cursive;
 
 .logofontfamily {
-  font-family: $logoFontFamily !important;
+  font-family: $companyName !important;
+  text-decoration: none !important;
 }
