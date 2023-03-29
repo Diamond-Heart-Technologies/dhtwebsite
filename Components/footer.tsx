@@ -19,11 +19,7 @@ const FooterRectangle = () => {
   return (
     <>
       <div className={`block mod:hidden ${styles.footerBg}`}>
-        {/* <div className="container"> */}
         <div className={`flex flex-row space-x-1 justify-around`}>
-          {/* <div className="sm:mt-96 sm:my-44 lg:mt-96 lg:my-28 sm:w-96">
-            <Image className={`mt-16`} src={company} alt={""} />
-          </div> */}
           <div className={`mt-96 my-32`}>
             <h1
               className={`mt-20 ${colors.secColor} ${styles.logoText} ${logo.logofontfamily}`}>

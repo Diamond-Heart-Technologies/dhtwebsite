@@ -93,8 +93,9 @@ const Contact = () => {
 export const ContactM = () => {
   return (
     <section className={`hidden mod:block ${styles.contactUsMobilebg}`}>
-      <div className=" h-screen bg-gradient-to-br flex justify-center items-center mx-auto">
-        <form className={`mt-96`}>
+      <div
+        className={`h-screen bg-gradient-to-br flex justify-center items-center mx-auto`}>
+        <form className={`mt-72`}>
           <div className={`mb-12 lg:mb-0 mt-72`}>
             <h2 className="block mb-4 text-white font-light text-3xl text-center">
               Contact Us
@@ -104,7 +105,7 @@ export const ContactM = () => {
           </div>
           <div
             className={`bg-white px-10 py-8 rounded-xl shadow-md max-w-sm w-[270px] h-[500px]`}>
-            <div className="space-y-4 font-light">
+            <div className={`space-y-4 font-light`}>
               <div>
                 <label htmlFor="email" className="">
                   Name:
@@ -155,7 +156,7 @@ export const ContactM = () => {
                   name="message"
                   id="message"
                   // placeholder="Type your message"
-                  className="w-full resize-none rounded-md border bg-white py-3 px-6 text-base font-light text-[#6B7280] outline-none focus:border-[#000000] focus:shadow-md"></textarea>
+                  className={`w-full resize-none rounded-md border bg-white py-3 px-6 text-base font-light text-[#6B7280] outline-none focus:border-[#000000] focus:shadow-md`}></textarea>
               </div>
             </div>
             <div className=" flex flex-col items-center justify-center">
