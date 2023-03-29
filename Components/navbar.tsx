@@ -35,7 +35,7 @@ export const Navbar = () => {
       // style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed  w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-white"
+          ? "fixed  w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-white "
           : "fixed w-full h-20 z-[100]"
       }
     >
@@ -50,24 +50,36 @@ export const Navbar = () => {
           />
         </Link>
         <div>
-          <ul style={{ color: `${linkColor}` }} className="hidden sm:flex">
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/">Home</Link>
+          <ul
+            style={{ color: `${linkColor}` }}
+            className="hidden sm:flex lg:pr-[178px] md:gap-3"
+          >
+            <li className="lg:ml-9  ml-6 hover:text-purple text-dark  text-[19px] ">
+              <Link href="#">Services</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#about">About</Link>
+            <li className="lg:ml-9  ml-6 hover:text-purple text-dark text-[19px]">
+              <Link href="#">About</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#skills">Skills</Link>
+            <li className="lg:ml-9  ml-6 hover:text-purple text-dark text-[19px]  ">
+              <Link href="#">Our Process</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#projects">Projects</Link>
+            <li className="lg:ml-9  ml-6 hover:text-purple text-dark text-[19px]">
+              <Link href="#">Projects</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/resume">Resume</Link>
+            <li className="lg:ml-9  ml-6 hover:text-purple text-dark text-[19px]">
+              <Link href="#">Testimonials</Link>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#contact">Contact</Link>
+            {/* <li className="ml-10 mr-6   hover:text-purple text-dark text-[19px] lg:text-white">
+              <Link href="#">Contacts</Link>
+            </li> */}
+            <li
+              className={
+                shadow
+                  ? " text-dark ml-6 mr-6   hover:text-purple text-[19px]"
+                  : "ml-6  lg:mr-10   hover:text-purple text-dark text-[19px] lg:text-white"
+              }
+            >
+              <Link href="#">Contacts</Link>
             </li>
           </ul>
           {/* Hamburger Icon */}
@@ -113,42 +125,60 @@ export const Navbar = () => {
                 <AiOutlineClose />
               </div>
             </div>
-            <div className="border-b border-gray-300 my-4">
+            {/* <div className="border-b border-gray-300 my-4">
               <p className="w-[85%] md:w-[90%] py-4">
                 Let&#39;s build something legendary together
               </p>
-            </div>
+            </div> */}
           </div>
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Home
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4  hover:text-purple text-dark  text-[19px]"
+                >
+                  Services
                 </li>
               </Link>
               <Link href="/#about">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4  hover:text-purple text-dark  text-[19px]"
+                >
                   About
                 </li>
               </Link>
               <Link href="/#skills">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Skills
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4  hover:text-purple text-dark  text-[19px]"
+                >
+                  Our Process
                 </li>
               </Link>
               <Link href="/#projects">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4  hover:text-purple text-dark  text-[19px]"
+                >
                   Projects
                 </li>
               </Link>
               <Link href="/resume">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Resume
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4  hover:text-purple text-dark  text-[19px]"
+                >
+                  Testimonials
                 </li>
               </Link>
               <Link href="/#contact">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Contact
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4  hover:text-purple text-dark  text-[19px]"
+                >
+                  Contacts
                 </li>
               </Link>
             </ul>
