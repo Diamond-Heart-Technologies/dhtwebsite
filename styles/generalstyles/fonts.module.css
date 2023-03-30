@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Vast+Shadow&display=swap");
+.pryColor {
+  background-color: white;
+}
+
+.secColor {
+  color: #ffffff;
+}
+
+.textColor {
+  color: #838282;
+}
+
+.readMoreText {
+  color: #b845ff;
+}
+
+.navbarHeadingtextColor {
+  color: #323131;
+}
+
+.contactusTextColor {
+  color: #000000;
+}
+
+.btnColor {
+  background-color: #7402ba;
+}
+
+.textColor {
+  color: #838282;
+}
+
+.readMoreText {
+  color: #b845ff;
+}
+
+.navbarHeadingtextColor {
+  color: #323131;
+}
+
+.logofontfamily {
+  font-family: "Vast Shadow", cursive !important;
+  text-decoration: none !important;
+}
+/*# sourceMappingURL=fonts.module.css.map */

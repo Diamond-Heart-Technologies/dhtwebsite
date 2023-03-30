@@ -121,7 +121,7 @@ const FooterRectangle = () => {
                 <Instagram />
               </a>
               <a
-                href="https://www.facebook.com/100658196292297/posts/pfbid0ZjxTePCEgyUH6tiKCvbq28iXKtvY7CtXkc8mg2tKPrDJPYEB5LMiJEX2dxqL1iSpl/?mibextid=Nif5oz"
+                href="http://www.facebook.com/Diamond-Heart-Technologies-100658196292297/"
                 target="_blank">
                 <Facebook />
               </a>
@@ -253,7 +253,7 @@ export const FooterMobile = () => {
                   <Instagram1 />
                 </a>
                 <a
-                  href="https://www.facebook.com/100658196292297/posts/pfbid0ZjxTePCEgyUH6tiKCvbq28iXKtvY7CtXkc8mg2tKPrDJPYEB5LMiJEX2dxqL1iSpl/?mibextid=Nif5oz"
+                  href="http://www.facebook.com/Diamond-Heart-Technologies-100658196292297/"
                   target="_blank">
                   <Facebook1 />
                 </a>

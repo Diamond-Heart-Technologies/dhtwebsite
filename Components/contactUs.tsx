@@ -9,7 +9,7 @@ const Contact = () => {
       <div className="h-screen bg-gradient-to-br flex justify-center items-center w-full">
         <form className="mt-96">
           <div className="mb-12 lg:mb-0 mt-44">
-            <h2 className="block mb-4 text-white font-light text-3xl text-center">
+            <h2 className="block mb-4 text-white font-light text-2xl text-center">
               Contact Us
             </h2>
             <br />
@@ -97,7 +97,7 @@ export const ContactM = () => {
         className={`h-screen bg-gradient-to-br flex justify-center items-center mx-auto`}>
         <form className={`mt-72`}>
           <div className={`mb-12 lg:mb-0 mt-72`}>
-            <h2 className="block mb-4 text-white font-light text-3xl text-center">
+            <h2 className="block mb-4 text-white font-light text-xl text-center">
               Contact Us
             </h2>
             <br />
