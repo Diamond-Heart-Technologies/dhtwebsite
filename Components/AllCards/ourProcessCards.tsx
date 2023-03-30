@@ -30,7 +30,7 @@ export const OurProcessCardMapping = () => {
         {Card.OurProcessCard.map((item) => {
           return (
             <>
-              <div className="" key={item.Id}>
+              <div key={item.Id}>
                 <OurProcessCard {...item} />
               </div>
             </>
