@@ -42,12 +42,7 @@ const FooterRectangle = () => {
                 </Link>
               </li>
               <li className="mt-2">
-                <Link
-                  className={`nav-link active`}
-                  aria-current="page"
-                  href="#Services">
-                  Services
-                </Link>
+                <Link href={`#Services`}>Services</Link>
               </li>
               <li className="mt-2">
                 <Link
@@ -58,10 +53,7 @@ const FooterRectangle = () => {
                 </Link>
               </li>
               <li className="mt-2">
-                <Link
-                  className={`nav-link active `}
-                  aria-current="page"
-                  href="#OurProcess">
+                <Link aria-current="page" href="#OurProcess">
                   Our Process
                 </Link>
               </li>
@@ -77,15 +69,12 @@ const FooterRectangle = () => {
                 <Link
                   className={`nav-link active`}
                   aria-current="page"
-                  href="#Testimonial">
+                  href="#WhatOurCustomersAreSaying">
                   Testimonial
                 </Link>
               </li>
               <li className="mt-2">
-                <Link
-                  className={`nav-link active`}
-                  aria-current="page"
-                  href="#ContactUs">
+                <Link className={`nav-link active`} href="#ContactUs">
                   Contact Us
                 </Link>
               </li>
@@ -98,7 +87,8 @@ const FooterRectangle = () => {
               </div> */}
               <a
                 href="mailto:diamondhearttechnologies@gmail.com"
-                target="_blank">
+                target="_blank"
+                rel="noreferrer">
                 {" "}
                 diamondhearttechnologies@gmail.com
               </a>
@@ -106,26 +96,32 @@ const FooterRectangle = () => {
             <div className="flex flex-row space-x-7 justify-center mt-2">
               <a
                 href="https://www.linkedin.com/showcase/diamond-heart-technologies/"
-                target="_blank">
+                target="_blank"
+                rel="noreferrer">
                 {" "}
                 <LinkedIn />
               </a>
-              <a href="https://wa.me/message/S6OAQEBGFWPHP1" target="_blank">
+              <a
+                href="https://wa.me/message/S6OAQEBGFWPHP1"
+                target="_blank"
+                rel="noreferrer">
                 {" "}
                 <WhatsApp />
               </a>
 
               <a
                 href="https://instagram.com/diamondhearttechnologies?igshid=ZDdkNTZiNTM="
-                target="_blank">
+                target="_blank"
+                rel="noreferrer">
                 <Instagram />
               </a>
               <a
                 href="http://www.facebook.com/Diamond-Heart-Technologies-100658196292297/"
-                target="_blank">
+                target="_blank"
+                rel="noreferrer">
                 <Facebook />
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 <Twitter />
               </a>
             </div>
@@ -230,7 +226,8 @@ export const FooterMobile = () => {
               <p className={`${colors.secColor} ${styles.logoPgmail}`}>
                 <a
                   href="mailto:diamondhearttechnologies@gmail.com"
-                  target="_blank">
+                  target="_blank"
+                  rel="noreferrer">
                   {" "}
                   diamondhearttechnologies@gmail.com
                 </a>
@@ -238,26 +235,32 @@ export const FooterMobile = () => {
               <div className="flex flex-row space-x-11 justify-center mt-2">
                 <a
                   href="https://www.linkedin.com/showcase/diamond-heart-technologies/"
-                  target="_blank">
+                  target="_blank"
+                  rel="noreferrer">
                   {" "}
                   <LinkedIn1 />
                 </a>
-                <a href="https://wa.me/message/S6OAQEBGFWPHP1" target="_blank">
+                <a
+                  href="https://wa.me/message/S6OAQEBGFWPHP1"
+                  target="_blank"
+                  rel="noreferrer">
                   {" "}
                   <WhatsApp1 />
                 </a>
 
                 <a
                   href="https://instagram.com/diamondhearttechnologies?igshid=ZDdkNTZiNTM="
-                  target="_blank">
+                  target="_blank"
+                  rel="noreferrer">
                   <Instagram1 />
                 </a>
                 <a
                   href="http://www.facebook.com/Diamond-Heart-Technologies-100658196292297/"
-                  target="_blank">
+                  target="_blank"
+                  rel="noreferrer">
                   <Facebook1 />
                 </a>
-                <a href="" target="_blank">
+                <a href="" target="_blank" rel="noreferrer">
                   <Twitter1 />
                 </a>
               </div>

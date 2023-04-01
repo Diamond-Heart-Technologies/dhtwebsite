@@ -1,0 +1,74 @@
+.pryColor {
+  background-color: white;
+}
+
+.secColor {
+  color: #ffffff;
+}
+
+.textColor {
+  color: #838282;
+}
+
+.readMoreText {
+  color: #b845ff;
+}
+
+.navbarHeadingtextColor {
+  color: #323131;
+}
+
+.contactusTextColor {
+  color: #000000;
+}
+
+.btnColor {
+  background-color: #7402ba;
+}
+
+.textColor {
+  color: #838282;
+}
+
+.readMoreText {
+  color: #b845ff;
+}
+
+.navbarHeadingtextColor {
+  color: #323131;
+}
+
+.contactUsDesktopbg {
+  background-image: url(../../public/images/contactUsDesktopbg.png);
+  background-size: cover;
+  height: 855px;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.contactusCard {
+  width: 181px;
+}
+
+.contactUsMobilebg {
+  background-image: url(../../public/images/contactUsMobilebg.png);
+  background-size: cover;
+  height: 900px;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+@media (min-width: 820px) and (max-width: 912px) {
+  .contactCard {
+    margin-bottom: 600px;
+  }
+}
+/*# sourceMappingURL=contactUs.module.css.map */

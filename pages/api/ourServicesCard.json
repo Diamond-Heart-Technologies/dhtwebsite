@@ -1,0 +1,40 @@
+{
+  "OurservicesCard": [
+    {
+      "Id": 1,
+      "Image": "images/ourserviceimage.png",
+      "Title": "Product Design",
+      "BodyText": "Lorem ipsum dolor sit amet GHCC consectetur. Comm. Lorem ipsum dolor sit amet GHCC consectetur. Comm"
+    },
+    {
+      "Id": 2,
+      "Image": "images/ourserviceimage.png",
+      "Title": "Product Management",
+      "BodyText": "Lorem ipsum dolor sit amet GHCC consectetur. Comm. Lorem ipsum dolor sit amet GHCC consectetur. Comm"
+    },
+    {
+      "Id": 3,
+      "Image": "images/ourserviceimage.png",
+      "Title": "Frontend Development",
+      "BodyText": "Lorem ipsum dolor sit amet GHCC consectetur. Comm. Lorem ipsum dolor sit amet GHCC consectetur. Comm"
+    },
+    {
+      "Id": 4,
+      "Image": "images/ourserviceimage.png",
+      "Title": "Backend Development",
+      "BodyText": "Lorem ipsum dolor sit amet GHCC consectetur. Comm. Lorem ipsum dolor sit amet GHCC consectetur. Comm"
+    },
+    {
+      "Id": 5,
+      "Image": "images/ourserviceimage.png",
+      "Title": "Deployment and Maintenance",
+      "BodyText": "Lorem ipsum dolor sit amet GHCC consectetur. Comm. Lorem ipsum dolor sit amet GHCC consectetur. Comm"
+    },
+    {
+      "Id": 6,
+      "Image": "images/ourserviceimage.png",
+      "Title": "Digital Marketing",
+      "BodyText": "Lorem ipsum dolor sit amet GHCC consectetur. Comm. Lorem ipsum dolor sit amet GHCC consectetur. Comm"
+    }
+  ]
+}

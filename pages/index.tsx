@@ -8,6 +8,7 @@ import Link from "next/link";
 import ourprocessstyles from "../styles/componentstyles/ourprocess.module.scss";
 import { OurProcessCardMapping } from "@/Components/AllCards/ourProcessCards";
 import { TestimonialsCardMapping } from "@/Components/AllCards/testimonialCards";
+import { OurservicesCardMapping } from "@/Components/AllCards/ourServicescards";
 
 // import { FooterRectangleLg } from "../Components/footer";
 
