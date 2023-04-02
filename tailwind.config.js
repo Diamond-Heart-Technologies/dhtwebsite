@@ -46,7 +46,8 @@ module.exports = {
       purple: "#b845ff",
       borderLight: "#A1A1A1",
       dark: "#000000",
-      pupple: "#1402BA",
+      pupple: "#7402BA",
+
       extend: {},
     },
     extend: {},

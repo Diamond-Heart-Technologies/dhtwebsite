@@ -1,0 +1,45 @@
+{
+  "OurprojectsCard": [
+    {
+      "Id": 1,
+      "Image": "images/ourprojects.png",
+      "Title": "DHT",
+      "BodyText": " Here are the links to the design and url for this project:",
+      "Link1": "Design ",
+      "Link2": "Project",
+      "figma": "https://www.figma.com/file/2UHMG0gdRhlgWRt4Is5uCG/DHT-Website-Design?node-id=0-1&t=cmmrDP16GwXOFkyx-0",
+      "vercel": ""
+    },
+
+    {
+      "Id": 2,
+      "Image": "images/ourprojects.png",
+      "Title": "Market Station",
+      "BodyText": " Here are the links to the design and url for this project:",
+      "Link1": "Design ",
+      "Link2": "Project",
+      "figma": "https://www.figma.com/file/0OOuNqIzxp27rMP1za4Mvc/Market-Station?node-id=5%3A2&t=gmBcjQp4t1IOYgtB-1",
+      "vercel": "https://market-station-brown.vercel.app"
+    },
+    {
+      "Id": 3,
+      "Image": "images/ourprojects.png",
+      "Title": "Titiekundayo",
+      "BodyText": " Here are the links to the design and url for this project:",
+      "Link1": "Design ",
+      "Link2": "Project",
+      "figma": "",
+      "vercel": ""
+    },
+    {
+      "Id": 4,
+      "Image": "images/ourprojects.png",
+      "Title": "Market Station",
+      "BodyText": " Here are the links to the design and url for this project:",
+      "Link1": "Design ",
+      "Link2": "Project",
+      "figma": "",
+      "vercel": ""
+    }
+  ]
+}
