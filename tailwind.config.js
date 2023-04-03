@@ -49,6 +49,14 @@ module.exports = {
       pupple: "#7402BA",
 
       extend: {},
+      purple2: "#7402BA",
+      contactustext: "#000000",
+      extend: {
+        // fontFamily: {
+        //   poppins: ["Poppins", "sans-serif"],
+        //   VastShadow: ["Vast Shadow", cursive],
+        // },
+      },
     },
     extend: {},
   },

@@ -11,16 +11,9 @@
   left: 0px;
 }
 
-// @media (max-width: 767px) {
-//   .footerBg {
-//     display: none;
-//   }
-// }
-
 .footerMobile {
   background-image: url(../../public/images/FOOTERMOBILE.png);
   background-size: cover;
-  // height: 1150px;
   height: 200vh;
   width: 100%;
   max-width: 100%;
@@ -31,36 +24,19 @@
   left: 0px;
 }
 
-// .footerStyle {
-//   justify-content: center !important;
-// }
-
-// @media (min-width: 768px) and (max-width: 1800px) {
-//   .footerMobile {
-//     display: none;
-//   }
-// }
-
 .logoText {
   font-size: 50px;
 }
+
 .logoTextMobile {
   font-size: 40px;
 }
+
 .logoPtext {
   font-size: 8px;
 }
+
 .logoPtextMobile {
   font-size: 10px;
 }
-
-// @media (min-width: 768px) and (max-width: 1300px) {
-//   .footerWords {
-//     margin-top: 400px;
-//   }
-// }
-// @media (min-width: 768px) and (max-width: 1300px) {
-//   .footerWord {
-//     margin-top: 320px;
-//   }
-// }
+/*# sourceMappingURL=footer.module.css.map */
