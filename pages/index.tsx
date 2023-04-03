@@ -9,6 +9,8 @@ import ourprocessstyles from "../styles/componentstyles/ourprocess.module.scss";
 import { OurProcessCardMapping } from "@/Components/AllCards/ourProcessCards";
 import { TestimonialsCardMapping } from "@/Components/AllCards/testimonialCards";
 import { OurservicesCardMapping } from "@/Components/AllCards/ourServicescards";
+import Hero from "../Components/hero";
+import React from "react";
 
 // import { FooterRectangleLg } from "../Components/footer";
 
@@ -22,16 +24,53 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <section id="AboutUs">
-          <AboutUs />
+        <Hero />
+        <section className="mt-60" id="Services">
+          <h2 className="text-center text-2xl">Our Services</h2>
+          <OurservicesCardMapping />
+        </section>
+
+        <section
+          className="container mx-auto px-8 md:px-12 text-black mt-60"
+          id="AboutUs">
+          <h2 className="text-center text-2xl">About Us</h2>
+          <p className="text-left pt-4 mx-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
+            voluptates molestiae id distinctio explicabo vitae hic at, commodi
+            provident repudiandae eaque ex nulla mollitia cumque. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Eum natus, unde
+            pariatur perspiciatis mollitia voluptates exercitationem numquam
+            nesciunt quisquam, consequuntur temporibus, molestias magni? Ea quae
+            officiis saepe quam. Voluptates.
+          </p>
         </section>
 
         <section className="mt-60" id="OurProcess">
-          <OurProcess />
+          {/* desktop */}
+          <div
+            className={`mx-auto mt-24 text-white py-8 hidden sm:block ${ourprocessstyles.DesktopBg}`}>
+            <h2 className="text-center text-2xl sm:mt-16 lg:mt-80">
+              Our Process
+            </h2>
+            <OurProcessCardMapping />
+          </div>
+          {/* mobile */}
+          <div
+            className={`mx-auto mt-24 text-white py-20 overflow-hidden block sm:hidden ${ourprocessstyles.MobileBg}`}>
+            <h2 className="text-center text-2xl mt-28 sm:mt-16 lg:mt-28">
+              Our Process
+            </h2>
+            <OurProcessCardMapping />
+          </div>
         </section>
 
         <section className="mt-60" id="Testimonial">
-          <Whatourcustomersaresaying />
+          <div className={`container mx-auto mt-24`}>
+            <h2 className="text-center text-2xl">
+              What Our Customers Are Saying
+            </h2>
+            <TestimonialsCardMapping />
+          </div>
         </section>
 
         <section className="mt-60" id="ContactUs">
@@ -42,63 +81,8 @@ export default function Home() {
         <section className="mt-60">
           <FooterRectangle />
           <FooterMobile />
-          {/* <FooterRectangleLg /> */}
         </section>
-
-        {/* <h1 className="text-3xl font-bold underline">Hello world!</h1> */}
       </main>
     </>
   );
 }
-
-export const AboutUs = () => {
-  return (
-    <>
-      <div className="container mx-auto px-8 md:px-12 text-black mt-24">
-        <h2 className="text-center text-2xl">About Us</h2>
-        <p className="text-left pt-4 mx-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-          voluptates molestiae id distinctio explicabo vitae hic at, commodi
-          provident repudiandae eaque ex nulla mollitia cumque. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Eum natus, unde pariatur
-          perspiciatis mollitia voluptates exercitationem numquam nesciunt
-          quisquam, consequuntur temporibus, molestias magni? Ea quae officiis
-          saepe quam. Voluptates.
-        </p>
-      </div>
-    </>
-  );
-};
-
-export const OurProcess = () => {
-  return (
-    <>
-      {/* desktop */}
-      <div
-        className={`mx-auto mt-24 text-white py-8 hidden sm:block ${ourprocessstyles.DesktopBg}`}>
-        <h2 className="text-center text-2xl sm:mt-16 lg:mt-80">Our Process</h2>
-        <OurProcessCardMapping />
-      </div>
-
-      {/* mobile */}
-      <div
-        className={`mx-auto mt-24 text-white py-20 overflow-hidden block sm:hidden ${ourprocessstyles.MobileBg}`}>
-        <h2 className="text-center text-2xl mt-28 sm:mt-16 lg:mt-28">
-          Our Process
-        </h2>
-        <OurProcessCardMapping />
-      </div>
-    </>
-  );
-};
-
-export const Whatourcustomersaresaying = () => {
-  return (
-    <>
-      <div className={`container mx-auto mt-24`}>
-        <h2 className="text-center text-2xl">What Our Customers Are Saying</h2>
-        <TestimonialsCardMapping />
-      </div>
-    </>
-  );
-};

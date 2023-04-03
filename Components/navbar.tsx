@@ -50,19 +50,19 @@ export const Navbar = () => {
             style={{ color: `${linkColor}` }}
             className="hidden sm:flex lg:pr-[178px] md:gap-3">
             <li className="lg:ml-9  ml-6 hover:text-purple text-dark  text-[19px] ">
-              <Link href="#">Services</Link>
+              <Link href="#Services">Services</Link>
             </li>
             <li className="lg:ml-9  ml-6 hover:text-purple text-dark text-[19px]">
-              <Link href="#">About</Link>
+              <Link href="#AboutUs">About Us</Link>
             </li>
             <li className="lg:ml-9  ml-6 hover:text-purple text-dark text-[19px]  ">
-              <Link href="#">Our Process</Link>
+              <Link href="#OurProcess">Our Process</Link>
             </li>
             <li className="lg:ml-9  ml-6 hover:text-purple text-dark text-[19px]">
-              <Link href="#">Projects</Link>
+              <Link href="#OurProjects">Projects</Link>
             </li>
             <li className="lg:ml-9  ml-6 hover:text-purple text-dark text-[19px]">
-              <Link href="#">Testimonials</Link>
+              <Link href="#Testimonial">Testimonial</Link>
             </li>
             {/* <li className="ml-10 mr-6   hover:text-purple text-dark text-[19px] lg:text-white">
               <Link href="#">Contacts</Link>
@@ -73,7 +73,7 @@ export const Navbar = () => {
                   ? " text-dark ml-6 mr-6   hover:text-purple text-[19px]"
                   : "ml-6  lg:mr-10   hover:text-purple text-dark text-[19px] lg:text-white"
               }>
-              <Link href="#">Contacts</Link>
+              <Link href="#ContactUs">Contact Us</Link>
             </li>
           </ul>
           {/* Hamburger Icon */}
