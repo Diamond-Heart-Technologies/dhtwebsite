@@ -9,6 +9,7 @@ import ourprocessstyles from "../styles/componentstyles/ourprocess.module.scss";
 import { OurProcessCardMapping } from "@/Components/AllCards/ourProcessCards";
 import { TestimonialsCardMapping } from "@/Components/AllCards/testimonialCards";
 import { OurservicesCardMapping } from "@/Components/AllCards/ourServicescards";
+import { OurProjectsCardsMapping } from "../Components/AllCards/ourProjectsCards";
 import Hero from "../Components/hero";
 import React from "react";
 
@@ -25,7 +26,7 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
-        <section className="mt-60" id="Services">
+        <section className={`mt-60`} id="Services">
           <h2 className="text-center text-2xl">Our Services</h2>
           <OurservicesCardMapping />
         </section>
@@ -62,6 +63,11 @@ export default function Home() {
             </h2>
             <OurProcessCardMapping />
           </div>
+        </section>
+
+        <section className="mt-60" id="OurProjects">
+          <h2 className="text-center text-2xl">Our Projects</h2>
+          <OurProjectsCardsMapping />
         </section>
 
         <section className="mt-60" id="Testimonial">

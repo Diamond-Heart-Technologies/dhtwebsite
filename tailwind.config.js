@@ -31,14 +31,10 @@ module.exports = {
       purple: "#b845ff",
       purple2: "#7402BA",
       contactustext: "#000000",
-      extend: {
-        // fontFamily: {
-        //   poppins: ["Poppins", "sans-serif"],
-        //   VastShadow: ["Vast Shadow", cursive],
-        // },
-      },
+      borderLight: "#A1A1A1",
+      dark: "#000000",
+      extend: {},
     },
-    extend: {},
+    plugins: [],
   },
-  plugins: [],
 };

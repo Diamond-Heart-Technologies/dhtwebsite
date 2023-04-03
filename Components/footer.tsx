@@ -61,8 +61,8 @@ const FooterRectangle = () => {
                 <Link
                   className={`nav-link active`}
                   aria-current="page"
-                  href="#OurProject">
-                  Our Project
+                  href="#OurProjects">
+                  Our Projects
                 </Link>
               </li>
               <li className="mt-2">
@@ -200,8 +200,8 @@ export const FooterMobile = () => {
                   <Link
                     className={`nav-link active`}
                     aria-current="page"
-                    href="#OurProject">
-                    Our Project
+                    href="#OurProjects">
+                    Our Projects
                   </Link>
                 </li>
                 <li className="mt-2">

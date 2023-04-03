@@ -32,7 +32,7 @@ export const Navbar = () => {
       // style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed  w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-white "
+          ? "fixed  w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-white"
           : "fixed w-full h-20 z-[100]"
       }>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
@@ -53,9 +53,9 @@ export const Navbar = () => {
               <Link href="#Services">Services</Link>
             </li>
             <li className="lg:ml-9  ml-6 hover:text-purple text-dark text-[19px]">
-              <Link href="#AboutUs">About Us</Link>
+              <Link href="#AboutUs">About</Link>
             </li>
-            <li className="lg:ml-9  ml-6 hover:text-purple text-dark text-[19px]  ">
+            <li className="lg:ml-9  ml-6 hover:text-purple text-dark text-[19px] truncate">
               <Link href="#OurProcess">Our Process</Link>
             </li>
             <li className="lg:ml-9  ml-6 hover:text-purple text-dark text-[19px]">
@@ -73,7 +73,7 @@ export const Navbar = () => {
                   ? " text-dark ml-6 mr-6   hover:text-purple text-[19px]"
                   : "ml-6  lg:mr-10   hover:text-purple text-dark text-[19px] lg:text-white"
               }>
-              <Link href="#ContactUs">Contact Us</Link>
+              <Link href="#ContactUs">Contact</Link>
             </li>
           </ul>
           {/* Hamburger Icon */}
@@ -130,39 +130,39 @@ export const Navbar = () => {
                   Services
                 </li>
               </Link>
-              <Link href="/#about">
+              <Link href="/#AboutUs">
                 <li
                   onClick={() => setNav(false)}
                   className="py-4  hover:text-purple text-dark  text-[19px]">
                   About
                 </li>
               </Link>
-              <Link href="/#skills">
+              <Link href="/#OurProcess">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4  hover:text-purple text-dark  text-[19px]">
+                  className="py-4  hover:text-purple text-dark  text-[19px] truncate">
                   Our Process
                 </li>
               </Link>
-              <Link href="/#projects">
+              <Link href="/#OurProjects">
                 <li
                   onClick={() => setNav(false)}
                   className="py-4  hover:text-purple text-dark  text-[19px]">
                   Projects
                 </li>
               </Link>
-              <Link href="/resume">
+              <Link href="/Testimonial">
                 <li
                   onClick={() => setNav(false)}
                   className="py-4  hover:text-purple text-dark  text-[19px]">
-                  Testimonials
+                  Testimonial
                 </li>
               </Link>
-              <Link href="/#contact">
+              <Link href="/#ContactUs">
                 <li
                   onClick={() => setNav(false)}
                   className="py-4  hover:text-purple text-dark  text-[19px]">
-                  Contacts
+                  Contact
                 </li>
               </Link>
             </ul>
