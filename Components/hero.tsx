@@ -41,12 +41,3 @@ function Hero() {
 }
 
 export default Hero;
-
-// const HeroImageStyle = {
-//   background: `url(${HeroImage})`,
-//   width: "100%",
-//   height: "98vh",
-//   backgroundRepeat: "no-repeat",
-//   objectFit: "contain",
-//   // opacity: "0.8",
-// };
