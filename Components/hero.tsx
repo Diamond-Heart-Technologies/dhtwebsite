@@ -16,7 +16,7 @@ function Hero() {
           backgroundSize: "cover",
           backgroundPosition: "bottom",
         }}
-        className={`mob:hidden object-scale-down   `}
+        className="mod:hidden "
       >
         <Navbar />
       </div>

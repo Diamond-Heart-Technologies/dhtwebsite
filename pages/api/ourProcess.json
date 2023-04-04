@@ -1,0 +1,72 @@
+{
+  "OurProcessCard": [
+    {
+      "Id": 1,
+      "Image": "/images/Numbering1.png",
+      "Title": "Requirement Gathering",
+      "BodyText": "Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor."
+    },
+
+    {
+      "Id": 2,
+      "Image": "/images/Numbering2.png",
+      "Title": "Give You A Quote",
+      "BodyText": "Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor."
+    },
+
+    {
+      "Id": 3,
+      "Image": "/images/Numbering3.png",
+      "Title": "Agreement Documents",
+      "BodyText": "Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor."
+    },
+    {
+      "Id": 4,
+      "Image": "/images/Numbering4.png",
+      "Title": "Project Management",
+      "BodyText": "Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor."
+    },
+    {
+      "Id": 5,
+      "Image": "/images/Numbering5.png",
+      "Title": "Design",
+      "BodyText": "Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor."
+    },
+    {
+      "Id": 6,
+      "Image": "/images/Numbering6.png",
+      "Title": "Design Review",
+      "BodyText": "Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor."
+    },
+    {
+      "Id": 7,
+      "Image": "/images/Numbering7.png",
+      "Title": "Front End Development",
+      "BodyText": "Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor."
+    },
+    {
+      "Id": 8,
+      "Image": "/images/Numbering8.png",
+      "Title": "Back End Development",
+      "BodyText": "Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor."
+    },
+    {
+      "Id": 9,
+      "Image": "/images/Numbering9.png",
+      "Title": "Deployment",
+      "BodyText": "Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor."
+    },
+    {
+      "Id": 10,
+      "Image": "/images/Numbering10.png",
+      "Title": "Maintenance",
+      "BodyText": "Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor."
+    },
+    {
+      "Id": 11,
+      "Image": "/images/Numbering11.png",
+      "Title": "Digital Marketing",
+      "BodyText": "Lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor lorem ipsum dolor."
+    }
+  ]
+}

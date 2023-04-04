@@ -17,28 +17,47 @@ export const OurProjectsCards = (props: Product) => {
   return (
     <>
       <div
-        className={`flex  flex-col   border border-borderLight  shadow-xl hover:shadow-inner`}
-      >
+        className={`flex  flex-col   border border-borderLight  shadow-xl hover:shadow-inner`}>
         <img src={Image} className="" alt="..." />
         <h3
-          className={`text-center font-medium text-xl pt-5 pb-2 text-midnightash`}
-        >
+          className={`text-center font-medium text-xl pt-5 pb-2 text-midnightash`}>
           {Title}
         </h3>
         <p className={` text-start text-base px-4  text-lightash`}>
           {BodyText}
         </p>
 
-        <ul className="list-disc pl-9 pb-5 text-pupple font-medium">
-          <li className="">
-            <a href={figma} target="_blank">
-              {" "}
+        <ul className="list-disc pl-6 pb-5 font-medium">
+          <li className="text-purple">
+            <a href={figma} target="_blank" className="flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-2 h-2 mt-2 mx-1">
+                <path
+                  // fillRule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clipRule="evenodd"
+                />
+              </svg>
               {Link1}
             </a>
           </li>
-          <li>
-            <a href={vercel} target="_blank">
+          <li className="text-purple">
+            <a href={vercel} target="_blank" className="flex">
               {" "}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-2 h-2 mt-2 mx-1">
+                <path
+                  // fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
               {Link2}
             </a>
           </li>

@@ -1,8 +1,6 @@
 import styles from "../styles/componentstyles/footer.module.scss";
 import logo from "../styles/generalstyles/fonts.module.scss";
 import Image from "next/image";
-import company from "../public/images/company.png";
-import LogoMobile from "../public/images/LogoMobile.png";
 import colors from "../styles/generalstyles/colors.module.scss";
 import Link from "next/link";
 import { LinkedIn } from "../Components/Icons.js/SocialMediaIcons";
@@ -10,26 +8,25 @@ import { WhatsApp } from "../Components/Icons.js/SocialMediaIcons";
 import { Instagram } from "../Components/Icons.js/SocialMediaIcons";
 import { Facebook } from "../Components/Icons.js/SocialMediaIcons";
 import { Twitter } from "../Components/Icons.js/SocialMediaIcons";
-import ScrollToTop from "../Components/Icons.js/scrolltoTheTopIcon";
+import { LinkedIn1 } from "../Components/Icons.js/SocialMediaIcons";
+import { WhatsApp1 } from "../Components/Icons.js/SocialMediaIcons";
+import { Instagram1 } from "../Components/Icons.js/SocialMediaIcons";
+import { Facebook1 } from "../Components/Icons.js/SocialMediaIcons";
+import { Twitter1 } from "../Components/Icons.js/SocialMediaIcons";
+// import ScrollToTop from "../Components/Icons.js/scrolltoTheTopIcon";
 
 const FooterRectangle = () => {
   return (
     <>
       <div className={`block mod:hidden ${styles.footerBg}`}>
-        {/* <div className="container"> */}
         <div className={`flex flex-row space-x-1 justify-around`}>
-          {/* <div className="sm:mt-96 sm:my-44 lg:mt-96 lg:my-28 sm:w-96">
-            <Image className={`mt-16`} src={company} alt={""} />
-          </div> */}
           <div className={`mt-96 my-32`}>
             <h1
-              className={`mt-20 ${colors.secColor} ${styles.logoText} ${logo.logofontfamily}`}
-            >
+              className={`mt-20 ${colors.secColor} ${styles.logoText} ${logo.logofontfamily}`}>
               DHT
             </h1>
             <p
-              className={`${colors.secColor} ${logo.logofontfamily} ${styles.logoPtext}`}
-            >
+              className={`${colors.secColor} ${logo.logofontfamily} ${styles.logoPtext}`}>
               DiamondHeartTechnologies
             </p>
           </div>
@@ -40,35 +37,23 @@ const FooterRectangle = () => {
                 <Link
                   className={`nav-link active`}
                   aria-current="page"
-                  href="/"
-                >
+                  href="/">
                   Home
                 </Link>
               </li>
               <li className="mt-2">
-                <Link
-                  className={`nav-link active`}
-                  aria-current="page"
-                  href="#Services"
-                >
-                  Services
-                </Link>
+                <Link href={`#Services`}>Services</Link>
               </li>
               <li className="mt-2">
                 <Link
                   className={`nav-link active `}
                   aria-current="page"
-                  href="#AboutUs"
-                >
+                  href="#AboutUs">
                   About Us
                 </Link>
               </li>
               <li className="mt-2">
-                <Link
-                  className={`nav-link active `}
-                  aria-current="page"
-                  href="#OurProcess"
-                >
+                <Link aria-current="page" href="#OurProcess">
                   Our Process
                 </Link>
               </li>
@@ -76,26 +61,20 @@ const FooterRectangle = () => {
                 <Link
                   className={`nav-link active`}
                   aria-current="page"
-                  href="#OurProject"
-                >
-                  Our Project
+                  href="#OurProjects">
+                  Our Projects
                 </Link>
               </li>
               <li className="mt-2">
                 <Link
                   className={`nav-link active`}
                   aria-current="page"
-                  href="#Testimonial"
-                >
+                  href="#WhatOurCustomersAreSaying">
                   Testimonial
                 </Link>
               </li>
               <li className="mt-2">
-                <Link
-                  className={`nav-link active`}
-                  aria-current="page"
-                  href="#ContactUs"
-                >
+                <Link className={`nav-link active`} href="#ContactUs">
                   Contact Us
                 </Link>
               </li>
@@ -103,13 +82,13 @@ const FooterRectangle = () => {
           </div>
           <div className={`mt-96`}>
             <p className={`mt-16  ${colors.secColor}`}>
-              <div className="flex justify-end">
+              {/* <div className="flex justify-end">
                 <ScrollToTop />
-              </div>
+              </div> */}
               <a
                 href="mailto:diamondhearttechnologies@gmail.com"
                 target="_blank"
-              >
+                rel="noreferrer">
                 {" "}
                 diamondhearttechnologies@gmail.com
               </a>
@@ -118,11 +97,14 @@ const FooterRectangle = () => {
               <a
                 href="https://www.linkedin.com/showcase/diamond-heart-technologies/"
                 target="_blank"
-              >
+                rel="noreferrer">
                 {" "}
                 <LinkedIn />
               </a>
-              <a href="https://wa.me/message/S6OAQEBGFWPHP1" target="_blank">
+              <a
+                href="https://wa.me/message/S6OAQEBGFWPHP1"
+                target="_blank"
+                rel="noreferrer">
                 {" "}
                 <WhatsApp />
               </a>
@@ -130,16 +112,16 @@ const FooterRectangle = () => {
               <a
                 href="https://instagram.com/diamondhearttechnologies?igshid=ZDdkNTZiNTM="
                 target="_blank"
-              >
+                rel="noreferrer">
                 <Instagram />
               </a>
               <a
-                href="https://www.facebook.com/100658196292297/posts/pfbid0ZjxTePCEgyUH6tiKCvbq28iXKtvY7CtXkc8mg2tKPrDJPYEB5LMiJEX2dxqL1iSpl/?mibextid=Nif5oz"
+                href="http://www.facebook.com/Diamond-Heart-Technologies-100658196292297/"
                 target="_blank"
-              >
+                rel="noreferrer">
                 <Facebook />
               </a>
-              <a href="" target="_blank">
+              <a href="" target="_blank" rel="noreferrer">
                 <Twitter />
               </a>
             </div>
@@ -155,11 +137,8 @@ const FooterRectangle = () => {
 export const FooterMobile = () => {
   return (
     <>
-      <div className={` hidden mod:block ${styles.footerMobile}`}>
-        <br />
-        <br />
-        <br />
-        <br />
+      <div
+        className={`hidden mod:block overflow-hidden ${styles.footerMobile}`}>
         <br />
         <br />
         <br />
@@ -167,16 +146,14 @@ export const FooterMobile = () => {
         <br />
         <br />
 
-        <div className={`text-center`}>
+        <div className={`text-center mb-16 ${styles.footerText}`}>
           <div className={`mt-96`}>
             <h1
-              className={`mt-96 ${colors.secColor} ${logo.logofontfamily} ${styles.logoText} ${styles.logoTextMobile}`}
-            >
+              className={`mt-96  ${colors.secColor} ${logo.logofontfamily} ${styles.logoText} ${styles.logoTextMobile}`}>
               DHT
             </h1>
             <p
-              className={`${colors.secColor} ${logo.logofontfamily} ${styles.logoPtextMobile}`}
-            >
+              className={`${colors.secColor} ${logo.logofontfamily} ${styles.logoPtextMobile}`}>
               DiamondHeartTechnologies
             </p>
           </div>
@@ -188,8 +165,7 @@ export const FooterMobile = () => {
                   <Link
                     className={`nav-link active`}
                     aria-current="page"
-                    href="/"
-                  >
+                    href="/">
                     Home
                   </Link>
                 </li>
@@ -197,8 +173,7 @@ export const FooterMobile = () => {
                   <Link
                     className={`nav-link active`}
                     aria-current="page"
-                    href="#Services"
-                  >
+                    href="#Services">
                     Services
                   </Link>
                 </li>
@@ -206,8 +181,7 @@ export const FooterMobile = () => {
                   <Link
                     className={`nav-link active `}
                     aria-current="page"
-                    href="#AboutUs"
-                  >
+                    href="#AboutUs">
                     About Us
                   </Link>
                 </li>
@@ -218,8 +192,7 @@ export const FooterMobile = () => {
                   <Link
                     className={`nav-link active `}
                     aria-current="page"
-                    href="#OurProcess"
-                  >
+                    href="#OurProcess">
                     Our Process
                   </Link>
                 </li>
@@ -227,17 +200,15 @@ export const FooterMobile = () => {
                   <Link
                     className={`nav-link active`}
                     aria-current="page"
-                    href="#OurProject"
-                  >
-                    Our Project
+                    href="#OurProjects">
+                    Our Projects
                   </Link>
                 </li>
                 <li className="mt-2">
                   <Link
                     className={`nav-link active`}
                     aria-current="page"
-                    href="#Testimonial"
-                  >
+                    href="#Testimonial">
                     Testimonial
                   </Link>
                 </li>
@@ -245,12 +216,57 @@ export const FooterMobile = () => {
                   <Link
                     className={`nav-link active`}
                     aria-current="page"
-                    href="#ContactUs"
-                  >
+                    href="#ContactUs">
                     Contact Us
                   </Link>
                 </li>
               </ul>
+            </div>
+            <div className={`mt-12`}>
+              <p className={`${colors.secColor} ${styles.logoPgmail}`}>
+                <a
+                  href="mailto:diamondhearttechnologies@gmail.com"
+                  target="_blank"
+                  rel="noreferrer">
+                  {" "}
+                  diamondhearttechnologies@gmail.com
+                </a>
+              </p>
+              <div className="flex flex-row space-x-11 justify-center mt-2">
+                <a
+                  href="https://www.linkedin.com/showcase/diamond-heart-technologies/"
+                  target="_blank"
+                  rel="noreferrer">
+                  {" "}
+                  <LinkedIn1 />
+                </a>
+                <a
+                  href="https://wa.me/message/S6OAQEBGFWPHP1"
+                  target="_blank"
+                  rel="noreferrer">
+                  {" "}
+                  <WhatsApp1 />
+                </a>
+
+                <a
+                  href="https://instagram.com/diamondhearttechnologies?igshid=ZDdkNTZiNTM="
+                  target="_blank"
+                  rel="noreferrer">
+                  <Instagram1 />
+                </a>
+                <a
+                  href="http://www.facebook.com/Diamond-Heart-Technologies-100658196292297/"
+                  target="_blank"
+                  rel="noreferrer">
+                  <Facebook1 />
+                </a>
+                <a href="" target="_blank" rel="noreferrer">
+                  <Twitter1 />
+                </a>
+              </div>
+              {/* <div className="flex justify-end mt-2">
+                <ScrollToTop />
+              </div> */}
             </div>
           </div>
         </div>

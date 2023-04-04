@@ -1,6 +1,3 @@
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import React from "react";
@@ -8,6 +5,9 @@ import Head from "next/head";
 import Navstyle from "../styles/componentstyles/navbar.module.scss";
 import navimage from "../public/images/navimage.png";
 import Image from "next/image";
+import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 export const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -35,7 +35,7 @@ export const Navbar = () => {
       // style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed  w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-white "
+          ? "fixed  w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-white"
           : "fixed w-full h-20 z-[100]"
       }
     >
@@ -55,19 +55,19 @@ export const Navbar = () => {
             className="hidden sm:flex lg:pr-[178px] md:gap-3"
           >
             <li className="lg:ml-9  ml-6 hover:text-purple text-dark  text-[19px] ">
-              <Link href="#">Services</Link>
+              <Link href="#Services">Services</Link>
             </li>
             <li className="lg:ml-9  ml-6 hover:text-purple text-dark text-[19px]">
-              <Link href="#">About</Link>
+              <Link href="#AboutUs">About</Link>
             </li>
-            <li className="lg:ml-9  ml-6 hover:text-purple text-dark text-[19px]  ">
-              <Link href="#">Our Process</Link>
-            </li>
-            <li className="lg:ml-9  ml-6 hover:text-purple text-dark text-[19px]">
-              <Link href="#">Projects</Link>
+            <li className="lg:ml-9  ml-6 hover:text-purple text-dark text-[19px] truncate">
+              <Link href="#OurProcess">Our Process</Link>
             </li>
             <li className="lg:ml-9  ml-6 hover:text-purple text-dark text-[19px]">
-              <Link href="#">Testimonials</Link>
+              <Link href="#OurProjects">Projects</Link>
+            </li>
+            <li className="lg:ml-9  ml-6 hover:text-purple text-dark text-[19px]">
+              <Link href="#Testimonial">Testimonial</Link>
             </li>
             {/* <li className="ml-10 mr-6   hover:text-purple text-dark text-[19px] lg:text-white">
               <Link href="#">Contacts</Link>
@@ -79,7 +79,7 @@ export const Navbar = () => {
                   : "ml-6  lg:mr-10   hover:text-purple text-dark text-[19px] lg:text-white"
               }
             >
-              <Link href="#">Contacts</Link>
+              <Link href="#ContactUs">Contact</Link>
             </li>
           </ul>
           {/* Hamburger Icon */}
@@ -141,7 +141,7 @@ export const Navbar = () => {
                   Services
                 </li>
               </Link>
-              <Link href="/#about">
+              <Link href="/#AboutUs">
                 <li
                   onClick={() => setNav(false)}
                   className="py-4  hover:text-purple text-dark  text-[19px]"
@@ -149,15 +149,15 @@ export const Navbar = () => {
                   About
                 </li>
               </Link>
-              <Link href="/#skills">
+              <Link href="/#OurProcess">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4  hover:text-purple text-dark  text-[19px]"
+                  className="py-4  hover:text-purple text-dark  text-[19px] truncate"
                 >
                   Our Process
                 </li>
               </Link>
-              <Link href="/#projects">
+              <Link href="/#OurProjects">
                 <li
                   onClick={() => setNav(false)}
                   className="py-4  hover:text-purple text-dark  text-[19px]"
@@ -165,20 +165,20 @@ export const Navbar = () => {
                   Projects
                 </li>
               </Link>
-              <Link href="/resume">
+              <Link href="/Testimonial">
                 <li
                   onClick={() => setNav(false)}
                   className="py-4  hover:text-purple text-dark  text-[19px]"
                 >
-                  Testimonials
+                  Testimonial
                 </li>
               </Link>
-              <Link href="/#contact">
+              <Link href="/#ContactUs">
                 <li
                   onClick={() => setNav(false)}
                   className="py-4  hover:text-purple text-dark  text-[19px]"
                 >
-                  Contacts
+                  Contact
                 </li>
               </Link>
             </ul>
