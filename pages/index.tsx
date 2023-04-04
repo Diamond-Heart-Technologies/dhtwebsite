@@ -4,6 +4,7 @@ import Contact from "@/Components/contactUs";
 // import { ContactM } from "@/Components/contactUs";
 import FooterRectangle from "../Components/footer";
 import { FooterMobile } from "../Components/footer";
+import Hero from "../Components/hero";
 
 // import { FooterRectangleLg } from "../Components/footer";
 
@@ -23,6 +24,7 @@ export default function Home() {
           {/* <ContactM /> */}
         </section>
         <section className="mt-60">
+          <Hero />
           <FooterRectangle />
           <FooterMobile />
           {/* <FooterRectangleLg /> */}
