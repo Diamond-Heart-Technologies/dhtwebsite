@@ -26,15 +26,14 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
-        <section className={`mt-60`} id="Services">
+        <section className={`mod:mt-10 sm:mt-60 lg:mt-60`} id="Services">
           <h2 className="text-center text-2xl">Our Services</h2>
           <OurservicesCardMapping />
         </section>
 
         <section
-          className="container mx-auto px-8 md:px-12 text-black mt-60"
-          id="AboutUs"
-        >
+          className="container mx-auto px-8 md:px-12 text-black mt-52"
+          id="AboutUs">
           <h2 className="text-center text-2xl">About Us</h2>
           <p className="text-left pt-4 mx-auto">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
@@ -47,11 +46,10 @@ export default function Home() {
           </p>
         </section>
 
-        <section className="mt-60" id="OurProcess">
+        <section className="mt-52" id="OurProcess">
           {/* desktop */}
           <div
-            className={`mx-auto mt-24 text-white py-8 hidden sm:block ${ourprocessstyles.DesktopBg}`}
-          >
+            className={`mx-auto mt-24 text-white py-8 hidden sm:block ${ourprocessstyles.DesktopBg}`}>
             <h2 className="text-center text-2xl sm:mt-16 lg:mt-80">
               Our Process
             </h2>
@@ -59,8 +57,7 @@ export default function Home() {
           </div>
           {/* mobile */}
           <div
-            className={`mx-auto mt-24 text-white py-20 overflow-hidden block sm:hidden ${ourprocessstyles.MobileBg}`}
-          >
+            className={`mx-auto mt-24 text-white py-20 overflow-hidden block sm:hidden ${ourprocessstyles.MobileBg}`}>
             <h2 className="text-center text-2xl mt-28 sm:mt-16 lg:mt-28">
               Our Process
             </h2>
@@ -68,12 +65,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-60" id="OurProjects">
+        <section className="mt-52" id="OurProjects">
           <h2 className="text-center text-2xl">Our Projects</h2>
           <OurProjectsCardsMapping />
         </section>
 
-        <section className="mt-60" id="Testimonial">
+        <section className="mt-52" id="Testimonial">
           <div className={`container mx-auto mt-24`}>
             <h2 className="text-center text-2xl">
               What Our Customers Are Saying
@@ -82,12 +79,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-60" id="ContactUs">
+        <section className="mt-52" id="ContactUs">
           <Contact />
           <ContactM />
         </section>
 
-        <section className="mt-60">
+        <section className="mt-52">
           <FooterRectangle />
           <FooterMobile />
         </section>

@@ -30,7 +30,7 @@ const FooterRectangle = () => {
               DiamondHeartTechnologies
             </p>
           </div>
-          <div className={` sm:mt-72 lg:mt-72 2xl:mt-80 ${colors.secColor}`}>
+          <div className={`sm:mt-72 lg:mt-72 2xl:mt-80 ${colors.secColor}`}>
             <h1 className={`text-xl font-bold mt-24 truncate`}>Quick Links</h1>
             <ul className="truncate">
               <li className="mt-2">
