@@ -37,8 +37,7 @@ export const Navbar = () => {
         shadow
           ? "fixed  w-full h-20 shadow-xl z-[100] ease-in-out duration-300 bg-white"
           : "fixed w-full h-20 z-[100]"
-      }
-    >
+      }>
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
           <Image
@@ -52,8 +51,7 @@ export const Navbar = () => {
         <div>
           <ul
             style={{ color: `${linkColor}` }}
-            className="hidden sm:flex lg:pr-[178px] md:gap-3"
-          >
+            className="hidden sm:flex lg:pr-[178px] md:gap-3">
             <li className="lg:ml-9  ml-6 hover:text-purple text-dark  text-[19px] ">
               <Link href="#Services">Services</Link>
             </li>
@@ -77,8 +75,7 @@ export const Navbar = () => {
                 shadow
                   ? " text-dark ml-6 mr-6   hover:text-purple text-[19px]"
                   : "ml-6  lg:mr-10   hover:text-purple text-dark text-[19px] lg:text-white"
-              }
-            >
+              }>
               <Link href="#ContactUs">Contact</Link>
             </li>
           </ul>
@@ -86,8 +83,7 @@ export const Navbar = () => {
           <div
             style={{ color: `${linkColor}` }}
             onClick={handleNav}
-            className="sm:hidden"
-          >
+            className="sm:hidden">
             <AiOutlineMenu
               className="hover:text-purple transition delay-100"
               size={32}
@@ -103,16 +99,14 @@ export const Navbar = () => {
           nav
             ? "md:hidden fixed left-0 top-0 w-full  h-screen bg-[#9aa1a1da]"
             : ""
-        }
-      >
+        }>
         {/* Side Drawer Menu */}
         <div
           className={
             nav
               ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
-          }
-        >
+          }>
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
@@ -120,8 +114,7 @@ export const Navbar = () => {
               </Link>
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
-              >
+                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
                 <AiOutlineClose />
               </div>
             </div>
@@ -136,48 +129,42 @@ export const Navbar = () => {
               <Link href="/">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4  hover:text-purple text-dark  text-[19px]"
-                >
+                  className="py-4  hover:text-purple text-dark  text-[19px]">
                   Services
                 </li>
               </Link>
               <Link href="/#AboutUs">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4  hover:text-purple text-dark  text-[19px]"
-                >
+                  className="py-4  hover:text-purple text-dark  text-[19px]">
                   About
                 </li>
               </Link>
               <Link href="/#OurProcess">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4  hover:text-purple text-dark  text-[19px] truncate"
-                >
+                  className="py-4  hover:text-purple text-dark  text-[19px] truncate">
                   Our Process
                 </li>
               </Link>
               <Link href="/#OurProjects">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4  hover:text-purple text-dark  text-[19px]"
-                >
+                  className="py-4  hover:text-purple text-dark  text-[19px]">
                   Projects
                 </li>
               </Link>
               <Link href="/Testimonial">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4  hover:text-purple text-dark  text-[19px]"
-                >
+                  className="py-4  hover:text-purple text-dark  text-[19px]">
                   Testimonial
                 </li>
               </Link>
               <Link href="/#ContactUs">
                 <li
                   onClick={() => setNav(false)}
-                  className="py-4  hover:text-purple text-dark  text-[19px]"
-                >
+                  className="py-4  hover:text-purple text-dark  text-[19px]">
                   Contact
                 </li>
               </Link>

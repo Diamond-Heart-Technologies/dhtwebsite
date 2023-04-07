@@ -16,13 +16,12 @@ function Hero() {
           backgroundSize: "cover",
           backgroundPosition: "bottom",
         }}
-        className="mod:hidden "
-      >
+        className="mod:hidden">
         <Navbar />
       </div>
 
       <div
-        className="sm:hidden "
+        className="sm:hidden"
         style={{
           backgroundImage: `url(${HeroImage2.src})`,
           height: "40vw",
@@ -30,8 +29,7 @@ function Hero() {
           backgroundSize: "100vw 40vw",
           backgroundPosition: "center",
           paddingBottom: "600px",
-        }}
-      >
+        }}>
         <div className="">
           <Navbar />
         </div>
