@@ -2,18 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import Card from "../../pages/api/ourProcess.json";
 
-// export function Images2() {
-//   return (
-//     <Image
-//       src={Image}
-//       alt="Landscape picture"
-//       width={800}
-//       height={500}
-//       className="mb-2"
-//     />
-//   );
-// }
-
 interface Product {
   Image: string;
   Title: string;
