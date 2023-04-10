@@ -1,7 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import Card from "../../pages/api/ourProcess.json";
-// import styles from "../../styles/componentstyles/ourprocess.module.scss";
+
+// export function Images2() {
+//   return (
+//     <Image
+//       src={Image}
+//       alt="Landscape picture"
+//       width={800}
+//       height={500}
+//       className="mb-2"
+//     />
+//   );
+// }
 
 interface Product {
   Image: string;
@@ -15,7 +26,10 @@ export const OurProcessCard = (props: Product) => {
   return (
     <>
       <div className="py-6 text-white w-auto h-auto sm:px-6">
-        <img src={Image} className="mb-2" alt="..." />
+        <picture>
+          <img src={Image} alt="ourprocessCard" className="mb-2" />
+        </picture>
+
         <h5 className="mb-2 text-lg font-bold">{Title}</h5>
         <p className="text-sm">{BodyText}</p>
       </div>

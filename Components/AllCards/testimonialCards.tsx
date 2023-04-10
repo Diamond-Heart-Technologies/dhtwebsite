@@ -21,11 +21,13 @@ export const TestimonialsCard = (props: Product) => {
             <h3 className="text-2xl font-bold max-[374px]:text-lg">{Name}</h3>
             <p className="text-lg max-[374px]:text-sm">{Title}</p>
           </div>
-          <img
-            className="-mt-16 pl-3 max-[300px]:w-20 max-w-full h-auto"
-            src={Image}
-            alt=""
-          />
+          <picture>
+            <img
+              className="-mt-16 pl-3 max-[300px]:w-20 max-w-full h-auto"
+              src={Image}
+              alt=""
+            />
+          </picture>
         </div>
         <div className="p-6">
           <p className="mb-2 text-lg text-black">{BodyText}</p>
