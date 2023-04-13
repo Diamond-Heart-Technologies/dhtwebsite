@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import Card from "../../pages/api/ourProcess.json";
-// import styles from "../../styles/componentstyles/ourprocess.module.scss";
 
 interface Product {
   Image: string;
