@@ -26,7 +26,9 @@ export default function Home() {
       </Head>
       <main>
         <Hero />
-        <section className={`mod:mt-10 sm:mt-60 lg:mt-60`} id="Services">
+        <section
+          className={`mod:mt-10 sm:mt-60 lg:mt-60 overflow-hidden`}
+          id="Services">
           <h2 className="text-center text-2xl">Our Services</h2>
           <OurservicesCardMapping />
         </section>
