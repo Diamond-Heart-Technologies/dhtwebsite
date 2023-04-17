@@ -17,7 +17,9 @@ export const OurservicesCard = (props: Product) => {
       <div className="">
         <div
           className={`flex  flex-col items-center rounded-br-[30px] rounded-tl-[30px]  rounded-bl-[10px]  rounded-tr-[10px] border border-borderLight py-6 px-2 ${Cards.ourservicecardsze} `}>
-          <img src={Image} className="mb-2" alt="..." />
+          <picture>
+            <img src={Image} className="mb-2" alt="..." />
+          </picture>
           <h3 className={`text-center font-bold text-xl text-midnightash`}>
             {Title}
           </h3>
