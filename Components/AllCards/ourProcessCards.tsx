@@ -16,8 +16,9 @@ export const OurProcessCard = (props: Product) => {
     <>
       <div
         className="py-6 text-white w-auto h-auto sm:px-6
-      ">
-        <img src={Image} className="mb-2" alt="..." />
+      "
+      >
+        <Image src={Image} className="mb-2" alt="..." />
         <h5 className="mb-2 text-lg font-bold">{Title}</h5>
         <p className="text-sm">{BodyText}</p>
       </div>
