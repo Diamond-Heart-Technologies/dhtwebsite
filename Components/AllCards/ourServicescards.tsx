@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
-import Cards from "../../styles/componentstyles/OurServicesCards.module.scss";
+// import Cards from "../../styles/componentstyles/OurServicesCards.module.scss";
 import OurservicesCardDetails from "../../pages/api/ourServicesCard.json";
+import Cards from "../../styles/componentstyles/ourServicesCards.module.scss";
 
 interface Product {
   Image: string;
