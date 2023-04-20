@@ -1,19 +1,15 @@
 import Head from "next/head";
-import Image from "next/image";
 import Contact from "@/Components/contactUs";
 import { ContactM } from "@/Components/contactUs";
 import FooterRectangle from "../Components/footer";
 import { FooterMobile } from "../Components/footer";
 import Hero from "../Components/hero";
-import Link from "next/link";
 import ourprocessstyles from "../styles/componentstyles/ourprocess.module.scss";
 import { OurProcessCardMapping } from "@/Components/AllCards/ourProcessCards";
 import { TestimonialsCardMapping } from "@/Components/AllCards/testimonialCards";
-import { OurservicesCardMapping } from "@/Components/AllCards/ourServicescards";
+import { OurservicesCardMapping } from "@/Components/AllCards/ourServicesCards";
 import { OurProjectsCardsMapping } from "../Components/AllCards/ourProjectsCards";
 import React from "react";
-
-// import { FooterRectangleLg } from "../Components/footer";
 
 export default function Home() {
   return (
